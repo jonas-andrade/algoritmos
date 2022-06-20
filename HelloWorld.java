@@ -60,6 +60,16 @@ public class HelloWorld{
 
        System.out.println("\nImprimindo valores máximo e mínimo: \n"+CONTANTES_STRING);
        
+       // comparando valores entre menor e maior
+       System.out.println("\nComparando valores entre menor e maior\n== Byte e short não se aplica!==\n");
+       System.out.println("maior inteiro entre 5 e 15 => "+Integer.max(5, 15));
+       System.out.println("menor inteiro entre 20 e 50 => "+Integer.min(20, 50));
+       System.out.println("maior Flloat entre 7.5 e 2.5 => "+Float.max(7.5f, 2.5f));
+       System.out.println("menor Flloat entre 0.5 e 8.0 => "+Float.min(.5f, 8.0f));
+       System.out.println("maior Double entre 0.5 e 1.5 => "+Double.max(.5, 1.5));
+       System.out.println("menor Double entre 26 e 5.0 => "+Double.min(26, 5.0));
+       System.out.println("Maior Long entre 9223372036854775807 e 10000000  => "+Long.max(num_long,10000000L));
+       System.out.println("menor Long entre 9223372036854775807 e 10000000  => "+Long.min(num_long,10000000L));
        
     }
 }
