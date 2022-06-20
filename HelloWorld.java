@@ -19,7 +19,7 @@ public class HelloWorld{
         System.out.println("Array de caracteres: "+str_laranja+"\nTipo primitivo (class) String: "+str_amarelo);
 
         // concatenando numeros
-
+        System.out.println("\nConcatenando Números");
            byte bt_positivo = 127; 
            byte bt_negativo = -128;
                 short curto = -32768;
@@ -31,8 +31,17 @@ public class HelloWorld{
        System.out.printf("%d %d %d %d %f %f %d\n",bt_positivo,bt_negativo,curto,um,um_e_meio,dois_e_meio,num_long);
       
        // somando valores
-       System.out.println("Soma de todos os valores: "+(bt_positivo+bt_negativo+curto+um+um_e_meio+dois_e_meio+num_long));
+       var soma = (bt_positivo+bt_negativo+curto+um+um_e_meio+dois_e_meio+num_long);
+       System.out.println("Soma de todos os valores: "+soma);
         
+       //convertendo valores para String
+       System.out.println("\nconvertendo valores para String");
+       System.out.println("Byte: "+
+       Byte.toString(bt_negativo)+"\nshort: "+
+       Short.toString(curto)+"\nfloat: "+
+       Float.toString(um_e_meio)+"\nDouble: "+
+       Double.toString(dois_e_meio)+"\nLong: "+
+       Long.toString(num_long));
        
        
     }
