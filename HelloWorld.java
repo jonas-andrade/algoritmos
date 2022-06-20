@@ -117,8 +117,8 @@ System.out.println("--=========================================================\
         System.out.println(String.format("[% d]", 100));  //APENAS ESPAÇO 
         System.out.println(String.format("[%05d]", 100)); // QUANTIDADE DE DIGITOS
         System.out.println("\n-------- LOCALE PARA DEFINIR O TIPO DE VIRGULA POR PAIS");
-        float valor = 15.50f;
-        String v = String.format(Locale.US,"%2.f", valor);
+        int valor = 1999;
+        String v = String.format(Locale.US,"%d", valor);
         System.out.println(v);;
     }
 }
