@@ -3,10 +3,17 @@ public class HelloWorld{
     public static void main(String []arguments) {
         System.out.println("Hello World");
          char caracteres[] =  {'L','4','r','4','n','J','4'};
-
         var str_laranja =  new String(caracteres);
-        var str_amarelo =  "4m4r3l0";
 
+        System.out.print("=============================\nOriginal: ");
+        // imprimindo de trás para frente
+        for(int i=0;i<=caracteres.length-1;i++)System.out.printf("%c ",caracteres[i]);
+        System.out.print("\nInvertido: ");
+        for(int y=caracteres.length-1;y>=0;y--)System.out.printf("%c ",caracteres[y]);
+       
+        System.out.println("\n=============================");
+
+        var str_amarelo =  "4m4r3l0";
         
         // concatenando strings...
         System.out.println("Array de caracteres: "+str_laranja+"\nTipo primitivo (class) String: "+str_amarelo);
