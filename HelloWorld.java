@@ -1,4 +1,5 @@
 import java.util.Calendar;
+import java.util.Locale;
 
 public class HelloWorld{
     private static final String CONTANTES_STRING = "Byte valor Máximo: "+Byte.MAX_VALUE+
@@ -115,6 +116,9 @@ System.out.println("--=========================================================\
         System.out.println(String.format("[%-5d]", 100)); //DEPOIS
         System.out.println(String.format("[% d]", 100));  //APENAS ESPAÇO 
         System.out.println(String.format("[%05d]", 100)); // QUANTIDADE DE DIGITOS
-       
+        System.out.println("\n-------- LOCALE PARA DEFINIR O TIPO DE VIRGULA POR PAIS");
+        float valor = 15.50f;
+        String v = String.format(Locale.US,"%2.f", valor);
+        System.out.println(v);;
     }
 }
