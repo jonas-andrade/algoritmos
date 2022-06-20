@@ -71,7 +71,37 @@ public class HelloWorld{
        System.out.println("menor Double entre 26 e 5.0 => "+Double.min(26, 5.0));
        System.out.println("Maior Long entre 9223372036854775807 e 10000000  => "+Long.max(num_long,10000000L));
        System.out.println("menor Long entre 9223372036854775807 e 10000000  => "+Long.min(num_long,10000000L));
-       
+
+       // tipode de string format
+    //   var p_em_hexadecimal = String.format("%a", 1.37);
+    //   var booleano = String.format("%b",true);
+    //   var caractere = String.format("%c",'j');
+    //   var decimal = String.format("%d",10);
+
+    //   var p_decimal_em_notacao_cientifica = String.format("%e",'j');
+    //   var p_flutuante_decimal = String.format("%f", 1.2);
+    //   var p_decimal_em_notacao_cientifica_com_base_presicao_valor = String.format("%g", 1.2);
+    //   var p_hashcode = String.format("%h",10);
+    //   var separador = String.format("%n",0);
+    //   var octal = String.format("%o", 10);
+
+System.out.println("--=========================================================\ntipos::");
+    System.out.println("A-> HEXADECIMAL COM PONTO FLUTUANTE %a: " + String.format("%a", 1.5));
+    System.out.println("B-> BOOLEANO DIMINUTIVO %b: " + String.format("%b", false));
+    System.out.println("B-> BOOLEANO MAIUSCULA %B: " + String.format("%B", true));
+    System.out.println("C-> CARACTERE %c: " + String.format("%c", 'd'));
+    System.out.println("D-> DECIMAL %d: " + String.format("%d", 101));
+    System.out.println("E-> NOTAÇÃO CIÊNTIFICA %e: " + String.format("%e", 5.6));
+    System.out.println("F-> FRACIONARIO %f: " + String.format("%f", 5.6));
+    System.out.println("G-> %g: " + String.format("%g", 5.6));
+    System.out.println("H-> HASHCODE %h: " + String.format("%h", 10));
+    System.out.print("N>  %n: " + String.format("%n"));
+    System.out.println("O-> OCTAL %o: " + String.format("%o", 8));
+    System.out.println("S-> STRING %s: " + String.format("%s", "Java"));
+    System.out.println("X-> HEXADECIMAL %x: " + String.format("%x", 10));
+    
+
+
        
     }
 }
