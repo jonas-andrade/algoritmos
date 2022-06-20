@@ -73,17 +73,7 @@ public class HelloWorld{
        System.out.println("menor Long entre 9223372036854775807 e 10000000  => "+Long.min(num_long,10000000L));
 
        // tipode de string format
-    //   var p_em_hexadecimal = String.format("%a", 1.37);
-    //   var booleano = String.format("%b",true);
-    //   var caractere = String.format("%c",'j');
-    //   var decimal = String.format("%d",10);
-
-    //   var p_decimal_em_notacao_cientifica = String.format("%e",'j');
-    //   var p_flutuante_decimal = String.format("%f", 1.2);
-    //   var p_decimal_em_notacao_cientifica_com_base_presicao_valor = String.format("%g", 1.2);
-    //   var p_hashcode = String.format("%h",10);
-    //   var separador = String.format("%n",0);
-    //   var octal = String.format("%o", 10);
+    
 
 System.out.println("--=========================================================\ntipos::");
     System.out.println("A-> HEXADECIMAL COM PONTO FLUTUANTE %a: " + String.format("%a", 1.5));
