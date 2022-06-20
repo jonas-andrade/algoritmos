@@ -1,7 +1,5 @@
 import java.util.Calendar;
 
-import javax.print.DocFlavor.STRING;
-
 public class HelloWorld{
     private static final String CONTANTES_STRING = "Byte valor Máximo: "+Byte.MAX_VALUE+
                           "\nByte valor Mínimo: "+Byte.MIN_VALUE+
