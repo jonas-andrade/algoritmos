@@ -117,8 +117,10 @@ System.out.println("--=========================================================\
         System.out.println(String.format("[% d]", 100));  //APENAS ESPAÇO 
         System.out.println(String.format("[%05d]", 100)); // QUANTIDADE DE DIGITOS
         System.out.println("\n-------- LOCALE PARA DEFINIR O TIPO DE VIRGULA POR PAIS");
-        int valor = 1999;
-        String v = String.format(Locale.US,"%,2d", valor);
-        System.out.println(v);;
+        int valor = 1999999;
+        String canada = String.format(Locale.CANADA,"CANADA: %,d", valor);
+        String english = String.format(Locale.FRENCH,"FRENCH: %,d", valor);
+        String china = String.format(Locale.GERMAN,"GERMAN: %,d", valor);
+        System.out.println(canada+"\n"+english+"\n"+china);;
     }
 }
