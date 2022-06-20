@@ -1,3 +1,6 @@
+import java.util.Calendar;
+
+import javax.print.DocFlavor.STRING;
 
 public class HelloWorld{
     private static final String CONTANTES_STRING = "Byte valor Máximo: "+Byte.MAX_VALUE+
@@ -91,7 +94,21 @@ System.out.println("--=========================================================\
     System.out.println("X-> HEXADECIMAL %x: " + String.format("%x", 10));
     
 
+    System.out.println("\nIMPRIMINDO DATA E HORA FORMATADO\n");
 
+        //Dia e mês por extenso
+        System.out.println("Dia da semana: "+String.format("%tA", Calendar.getInstance()));
+        System.out.println("Mês do ano: "+String.format("%tB", Calendar.getInstance()));
+        //Dia e mês abreviado
+        System.out.println("Dia da semana abreviado: "+String.format("%ta", Calendar.getInstance()));
+        System.out.println("Mês do ano abreviado:  "+String.format("%tb", Calendar.getInstance()));
+        //Ano formatado
+        System.out.println("Ano AA: "+String.format("%tC", Calendar.getInstance()));
+        System.out.println("dia do Mês DD:  "+String.format("%td", Calendar.getInstance()));
+
+        System.out.println("por exenso:: "+String.format("%tc", Calendar.getInstance()));
+        System.out.println("data: MM/DD/AA  "+String.format("%tD", Calendar.getInstance()));
+        System.out.println("data: AAAA/MM/DD:  "+String.format("%tF", Calendar.getInstance()));
        
     }
 }
