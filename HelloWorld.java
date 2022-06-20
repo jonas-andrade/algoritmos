@@ -40,7 +40,8 @@ public class HelloWorld{
             float um_e_meio = 1.5f;
          double dois_e_meio = 2.5;
               long num_long = 9223372036854775807L;
-       System.out.printf("%d %d %d %d %f %f %d\n",bt_positivo,bt_negativo,curto,um,um_e_meio,dois_e_meio,num_long);
+       String msg = String.format("%d %d %d %d %f %f %d\n",bt_positivo,bt_negativo,curto,um,um_e_meio,dois_e_meio,num_long);
+       System.out.printf(msg);
       
        // somando valores
        var soma = (bt_positivo+bt_negativo+curto+um+um_e_meio+dois_e_meio+num_long);
@@ -70,6 +71,7 @@ public class HelloWorld{
        System.out.println("menor Double entre 26 e 5.0 => "+Double.min(26, 5.0));
        System.out.println("Maior Long entre 9223372036854775807 e 10000000  => "+Long.max(num_long,10000000L));
        System.out.println("menor Long entre 9223372036854775807 e 10000000  => "+Long.min(num_long,10000000L));
+       
        
     }
 }
