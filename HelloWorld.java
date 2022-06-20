@@ -109,6 +109,14 @@ System.out.println("--=========================================================\
         System.out.println("por exenso:: "+String.format("%tc", Calendar.getInstance()));
         System.out.println("data: MM/DD/AA  "+String.format("%tD", Calendar.getInstance()));
         System.out.println("data: AAAA/MM/DD:  "+String.format("%tF", Calendar.getInstance()));
+
+
+        System.out.println("\nInserindo espaço antes e depois do numero");
+        System.out.println(String.format("[%d]", 100)); //SEM MARGIN
+        System.out.println(String.format("[%5d]", 100)); //ANTES 
+        System.out.println(String.format("[%-5d]", 100)); //DEPOIS
+        System.out.println(String.format("[% d]", 100));  //APENAS ESPAÇO 
+        System.out.println(String.format("[%05d]", 100)); // QUANTIDADE DE DIGITOS
        
     }
 }
