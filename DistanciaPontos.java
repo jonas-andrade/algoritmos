@@ -15,7 +15,7 @@
 
 public class DistanciaPontos {
     public static double calculoEuclides(Ponto p){
-        return Math.sqrt(Math.pow((p.x2 -p.x1), 2) + Math.pow((p.y2-p.y1), 2))
+        return Math.sqrt(Math.pow((p.x2 -p.x1), 2) + Math.pow((p.y2-p.y1), 2));
     }
 
     public static void main(String[] args) {
