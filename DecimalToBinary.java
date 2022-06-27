@@ -15,7 +15,7 @@ public class DecimalToBinary {
         sc.close();
        } catch (Exception e) {
         System.err.println(e);
-        //TODO: handle exception
+        
        }
        
     }
