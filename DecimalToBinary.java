@@ -1,8 +1,9 @@
 /**
  * DecimalToBinary
  */
-import java.util.*;
+import java.util.Scanner;
 public class DecimalToBinary {
+
     int decimal;
     int []bin = {0,0,0,0,0,0,0,0,0}; 
 
@@ -13,11 +14,7 @@ public class DecimalToBinary {
         System.out.print("digite o valor decimal: ");
         this.decimal = Integer.parseInt(sc.nextLine());
         sc.close();
-       } catch (Exception e) {
-        System.err.println(e);
-        
-       }
-       
+       } catch (Exception e) { System.err.println(e); }
     }
     public int div_dec(int x) {
         return x/2;
