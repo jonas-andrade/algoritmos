@@ -7,8 +7,11 @@ class Conversor{
         // BinaryToDecimal btd = new BinaryToDecimal();
         // btd.inputScanner();btd.result();
 
-        DecimalToHex dth = new DecimalToHex();
-        dth.inputScanner();dth.calcHex();dth.viewHex();
+        // DecimalToHex dth = new DecimalToHex();
+        // dth.inputScanner();dth.calcHex();dth.viewHex();
+
+        HexToDecimal htd = new HexToDecimal();
+        htd.inputScanner();htd.viewDecimal();
        
     }
  
