@@ -7,6 +7,7 @@ public class HexToDecimal {
     int base = 16;
     int decimal = 0;
 
+
     public HexToDecimal(){}
     public void inputScanner(){
         
@@ -25,14 +26,17 @@ public class HexToDecimal {
             (hex[i] == 'E'||hex[i] == 'e')? 14: (hex[i] == 'F'||hex[i] == 'f')? 15: Character.getNumericValue(hex[i]);
             count += (number > 9 && number <= 16 )?
              number*Math.pow(base, (this.in.length()-i-1)): 
-            Character.getNumericValue(hex[i])*Math.pow(base, (this.in.length()-i-1));      
+            Character.getNumericValue(hex[i])*Math.pow(base, (this.in.length()-i-1));  
+            if(!Character.isDigit(hex[i]) && (number > 15)){count = -1;break;}
        }
     return count;
     }
     public void viewDecimal(){
-        System.out.println("Resultado em decimal: "+calcHex());
-        count = 0;
-   
+        int res = calcHex();
+
+        if(res!=-1){System.out.println("Resultado em decimal: "+res);
+        }else{System.out.println("\nValor invalido!");}
+        count = 0; 
     }
 
 
