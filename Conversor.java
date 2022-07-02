@@ -10,9 +10,12 @@ class Conversor{
         // DecimalToHex dth = new DecimalToHex();
         // dth.inputScanner();dth.calcHex();dth.viewHex();
 
-        HexToDecimal htd = new HexToDecimal();
-        htd.inputScanner();htd.viewDecimal();
+        // HexToDecimal htd = new HexToDecimal();
+        // htd.inputScanner();htd.viewDecimal();
        
+
+        BinaryToHex bth = new BinaryToHex();
+        bth.inputScanner();bth.viewHex();
     }
  
 }
